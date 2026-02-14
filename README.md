@@ -2,7 +2,6 @@
 
 **Autor**: Jelena Lazović  
 **Broj indeksa**: 1045/2024  
-**Akademska godina**: 2024/2025  
 **Kurs**: Verifikacija Softvera  
 
 ---

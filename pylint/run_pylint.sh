@@ -6,9 +6,6 @@ echo "🔍 Running Pylint analysis"
 echo "========================================="
 echo ""
 
-# Create reports directory
-mkdir -p ./reports
-
 # Run Pylint
 echo "Analyzing Click source code..."
 pylint ../click/src/click/ \
@@ -27,5 +24,5 @@ echo ""
 echo "📊 Pylint Score: $SCORE"
 echo ""
 echo "📄 Reports saved to:"
-echo "   - reports/pylint/report.txt"
+echo "   - pylint/reports/report.txt"
 echo ""

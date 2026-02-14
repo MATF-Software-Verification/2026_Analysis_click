@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.14, pytest-9.0.2, pluggy-1.6.0 -- /Users/jelenalazovic/vs/2026_Analysis_click/venv/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /Users/jelenalazovic/vs/2026_Analysis_click
+plugins: cov-7.0.0
+collecting ... collected 28 items
+
+unit_tests/test_decorators_advanced.py::test_deeply_nested_command_groups PASSED [  3%]
+unit_tests/test_decorators_advanced.py::test_shared_options_propagation PASSED [  7%]
+unit_tests/test_decorators_advanced.py::test_multiple_option_with_validation PASSED [ 10%]
+unit_tests/test_decorators_advanced.py::test_variadic_arguments_with_options PASSED [ 14%]
+unit_tests/test_termui_advanced.py::test_prompt_basic PASSED             [ 17%]
+unit_tests/test_termui_advanced.py::test_prompt_with_default PASSED      [ 21%]
+unit_tests/test_termui_advanced.py::test_prompt_with_type PASSED         [ 25%]
+unit_tests/test_termui_advanced.py::test_confirm PASSED                  [ 28%]
+unit_tests/test_termui_advanced.py::test_confirm_with_default PASSED     [ 32%]
+unit_tests/test_termui_advanced.py::test_progressbar_display PASSED      [ 35%]
+unit_tests/test_termui_advanced.py::test_progressbar_with_length PASSED  [ 39%]
+unit_tests/test_termui_advanced.py::test_pause PASSED                    [ 42%]
+unit_tests/test_types_advanced.py::test_file_type_read PASSED            [ 46%]
+unit_tests/test_types_advanced.py::test_file_type_write PASSED           [ 50%]
+unit_tests/test_types_advanced.py::test_file_type_stdin PASSED           [ 53%]
+unit_tests/test_types_advanced.py::test_path_type_resolve PASSED         [ 57%]
+unit_tests/test_types_advanced.py::test_bool_type PASSED                 [ 60%]
+unit_tests/test_types_advanced.py::test_tuple_type PASSED                [ 64%]
+unit_tests/test_types_advanced.py::test_choice_case_insensitive PASSED   [ 67%]
+unit_tests/test_utils_advanced.py::test_echo_unicode_characters PASSED   [ 71%]
+unit_tests/test_utils_advanced.py::test_echo_special_characters PASSED   [ 75%]
+unit_tests/test_utils_advanced.py::test_echo_edge_cases PASSED           [ 78%]
+unit_tests/test_utils_advanced.py::test_echo_to_file_unicode PASSED      [ 82%]
+unit_tests/test_utils_advanced.py::test_format_filename_unicode PASSED   [ 85%]
+unit_tests/test_utils_advanced.py::test_get_binary_stream PASSED         [ 89%]
+unit_tests/test_utils_advanced.py::test_echo_bytes PASSED                [ 92%]
+unit_tests/test_utils_advanced.py::test_format_filename_bytes PASSED     [ 96%]
+unit_tests/test_utils_advanced.py::test_echo_color_strip PASSED          [100%]
+
+============================== 28 passed in 0.04s ==============================

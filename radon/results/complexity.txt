@@ -1,0 +1,818 @@
+click/src/click/_winconsole.py
+    F 276:0 _get_windows_console_stream - B (7)
+    M 131:4 _WindowsConsoleReader.readinto - B (6)
+    C 127:0 _WindowsConsoleReader - A (5)
+    F 263:0 _is_console - A (3)
+    C 162:0 _WindowsConsoleWriter - A (3)
+    M 167:4 _WindowsConsoleWriter._get_error_message - A (3)
+    M 174:4 _WindowsConsoleWriter.write - A (3)
+    M 203:4 ConsoleStream.write - A (3)
+    F 105:4 get_buffer - A (2)
+    C 118:0 _WindowsConsoleRawIOBase - A (2)
+    C 194:0 ConsoleStream - A (2)
+    M 212:4 ConsoleStream.writelines - A (2)
+    F 226:0 _get_text_stdin - A (1)
+    F 236:0 _get_text_stdout - A (1)
+    F 246:0 _get_text_stderr - A (1)
+    C 87:4 Py_buffer - A (1)
+    M 119:4 _WindowsConsoleRawIOBase.__init__ - A (1)
+    M 122:4 _WindowsConsoleRawIOBase.isatty - A (1)
+    M 128:4 _WindowsConsoleReader.readable - A (1)
+    M 163:4 _WindowsConsoleWriter.writable - A (1)
+    M 195:4 ConsoleStream.__init__ - A (1)
+    M 200:4 ConsoleStream.name - A (1)
+    M 216:4 ConsoleStream.__getattr__ - A (1)
+    M 219:4 ConsoleStream.isatty - A (1)
+    M 222:4 ConsoleStream.__repr__ - A (1)
+click/src/click/_textwrap.py
+    C 8:0 TextWrapper - A (3)
+    M 9:4 TextWrapper._handle_long_word - A (3)
+    M 40:4 TextWrapper.indent_only - A (3)
+    M 28:4 TextWrapper.extra_indent - A (1)
+click/src/click/globals.py
+    F 20:0 get_current_context - A (3)
+    F 54:0 resolve_color_default - A (3)
+    F 13:0 get_current_context - A (1)
+    F 17:0 get_current_context - A (1)
+    F 44:0 push_context - A (1)
+    F 49:0 pop_context - A (1)
+click/src/click/__init__.py
+    F 74:0 __getattr__ - A (5)
+click/src/click/core.py
+    M 2709:4 Option.__init__ - F (47)
+    M 3033:4 Option.get_help_extra - E (34)
+    M 273:4 Context.__init__ - D (28)
+    M 3237:4 Option.consume_value - D (21)
+    M 2894:4 Option._parse_decls - C (16)
+    M 1271:4 Command.shell_complete - C (15)
+    M 1338:4 Command.main - C (15)
+    C 2641:0 Option - C (15)
+    M 2411:4 Parameter.process_value - C (14)
+    M 1556:4 Group.__init__ - C (12)
+    M 2538:4 Parameter.handle_parse_result - C (11)
+    M 2988:4 Option.get_help_record - C (11)
+    M 1219:4 Command.parse_args - B (10)
+    M 1839:4 Group.invoke - B (10)
+    M 2120:4 Parameter.__init__ - B (9)
+    M 2337:4 Parameter.type_cast_value - B (9)
+    M 3195:4 Option.value_from_envvar - B (9)
+    M 1002:4 Command.get_params - B (8)
+    M 1689:4 Group.group - B (8)
+    M 1797:4 Group.format_commands - B (8)
+    M 2294:4 Parameter.consume_value - B (8)
+    F 98:0 augment_usage_errors - B (7)
+    M 768:4 Context.invoke - B (7)
+    M 1640:4 Group.command - B (7)
+    M 1907:4 Group.resolve_command - B (7)
+    M 1825:4 Group.parse_args - B (6)
+    M 2477:4 Parameter.resolve_envvar_value - B (6)
+    M 2949:4 Option.add_to_parser - B (6)
+    M 3117:4 Option.prompt_for_value - B (6)
+    M 3167:4 Option.resolve_envvar_value - B (6)
+    M 3301:4 Option.process_value - B (6)
+    M 3356:4 Argument.make_metavar - B (6)
+    F 54:0 _complete_visible_commands - A (5)
+    M 642:4 Context.command_path - A (5)
+    M 1097:4 Command.get_short_help_str - A (5)
+    M 1137:4 Command.format_help_text - A (5)
+    C 1503:0 Group - A (5)
+    M 1991:4 CommandCollection.get_command - A (5)
+    C 2027:0 Parameter - A (5)
+    M 2393:4 Parameter.value_is_missing - A (5)
+    M 2617:4 Parameter.shell_complete - A (5)
+    F 73:0 _check_nested_chain - A (4)
+    M 698:4 Context.lookup_default - A (4)
+    M 826:4 Context.forward - A (4)
+    C 873:0 Command - A (4)
+    M 1054:4 Command.get_help_option - A (4)
+    M 1161:4 Command.format_options - A (4)
+    M 1255:4 Command.invoke - A (4)
+    M 2234:4 Parameter.make_metavar - A (4)
+    M 2258:4 Parameter.get_default - A (4)
+    M 3329:4 Argument.__init__ - A (4)
+    M 3370:4 Argument._parse_decls - A (4)
+    F 3397:0 __getattr__ - A (3)
+    C 169:0 Context - A (3)
+    M 496:4 Context.scope - A (3)
+    M 667:4 Context.find_object - A (3)
+    M 935:4 Command.__init__ - A (3)
+    M 1035:4 Command.collect_usage_pieces - A (3)
+    M 1182:4 Command.make_context - A (3)
+    M 1451:4 Command._main_shell_completion - A (3)
+    M 1604:4 Group.to_info_dict - A (3)
+    M 1622:4 Group.add_command - A (3)
+    C 1961:0 CommandCollection - A (3)
+    M 2522:4 Parameter.value_from_envvar - A (3)
+    M 2610:4 Parameter.get_error_hint - A (3)
+    M 2888:4 Option.get_error_hint - A (3)
+    C 3319:0 Argument - A (3)
+    F 2017:0 _check_iter - A (2)
+    M 481:4 Context.__exit__ - A (2)
+    M 660:4 Context.find_root - A (2)
+    M 679:4 Context.ensure_object - A (2)
+    M 979:4 Command.to_info_dict - A (2)
+    M 1046:4 Command.get_help_option_names - A (2)
+    M 1081:4 Command.make_parser - A (2)
+    M 1173:4 Command.format_epilog - A (2)
+    C 1488:0 _FakeSubclassCheck - A (2)
+    M 1934:4 Group.shell_complete - A (2)
+    M 1977:4 CommandCollection.__init__ - A (2)
+    M 2008:4 CommandCollection.list_commands - A (2)
+    M 2191:4 Parameter.to_info_dict - A (2)
+    M 2869:4 Option.to_info_dict - A (2)
+    M 3351:4 Argument.human_readable_name - A (2)
+    F 93:0 batch - A (1)
+    F 116:0 iter_params_for_processing - A (1)
+    C 143:0 ParameterSource - A (1)
+    M 444:4 Context.protected_args - A (1)
+    M 455:4 Context.to_info_dict - A (1)
+    M 476:4 Context.__enter__ - A (1)
+    M 534:4 Context.meta - A (1)
+    M 561:4 Context.make_formatter - A (1)
+    M 575:4 Context.with_resource - A (1)
+    M 604:4 Context.call_on_close - A (1)
+    M 616:4 Context.close - A (1)
+    M 623:4 Context._close_with_exception_info - A (1)
+    M 689:4 Context.lookup_default - A (1)
+    M 694:4 Context.lookup_default - A (1)
+    M 718:4 Context.fail - A (1)
+    M 726:4 Context.abort - A (1)
+    M 730:4 Context.exit - A (1)
+    M 740:4 Context.get_usage - A (1)
+    M 746:4 Context.get_help - A (1)
+    M 752:4 Context._make_sub_context - A (1)
+    M 761:4 Context.invoke - A (1)
+    M 766:4 Context.invoke - A (1)
+    M 845:4 Context.set_parameter_source - A (1)
+    M 854:4 Context.get_parameter_source - A (1)
+    M 990:4 Command.__repr__ - A (1)
+    M 993:4 Command.get_usage - A (1)
+    M 1027:4 Command.format_usage - A (1)
+    M 1088:4 Command.get_help - A (1)
+    M 1120:4 Command.format_help - A (1)
+    M 1319:4 Command.main - A (1)
+    M 1329:4 Command.main - A (1)
+    M 1483:4 Command.__call__ - A (1)
+    M 1489:4 _FakeSubclassCheck.__subclasscheck__ - A (1)
+    M 1492:4 _FakeSubclassCheck.__instancecheck__ - A (1)
+    C 1496:0 _BaseCommand - A (1)
+    M 1633:4 Group.command - A (1)
+    M 1636:4 Group.command - A (1)
+    M 1682:4 Group.group - A (1)
+    M 1685:4 Group.group - A (1)
+    M 1733:4 Group.result_callback - A (1)
+    M 1778:4 Group.get_command - A (1)
+    M 1784:4 Group.list_commands - A (1)
+    M 1788:4 Group.collect_usage_pieces - A (1)
+    M 1793:4 Group.format_options - A (1)
+    C 1954:0 _MultiCommand - A (1)
+    M 1987:4 CommandCollection.add_source - A (1)
+    M 2219:4 Parameter.__repr__ - A (1)
+    M 2222:4 Parameter._parse_decls - A (1)
+    M 2228:4 Parameter.human_readable_name - A (1)
+    M 2249:4 Parameter.get_default - A (1)
+    M 2254:4 Parameter.get_default - A (1)
+    M 2291:4 Parameter.add_to_parser - A (1)
+    M 2604:4 Parameter.get_help_record - A (1)
+    M 2607:4 Parameter.get_usage_pieces - A (1)
+    M 3387:4 Argument.get_usage_pieces - A (1)
+    M 3390:4 Argument.get_error_hint - A (1)
+    M 3393:4 Argument.add_to_parser - A (1)
+click/src/click/types.py
+    F 1112:0 convert_type - C (17)
+    M 968:4 Path.convert - C (17)
+    M 516:4 _NumberRangeBase.convert - B (10)
+    M 308:4 Choice.get_metavar - B (7)
+    M 377:4 Choice.shell_complete - B (7)
+    M 557:4 _NumberRangeBase._describe_range - B (7)
+    M 815:4 File.convert - B (7)
+    C 879:0 Path - B (7)
+    M 210:4 StringParamType.convert - A (5)
+    M 288:4 Choice.normalize_choice - A (5)
+    M 914:4 Path.__init__ - A (5)
+    M 955:4 Path.coerce_path_result - A (5)
+    C 207:0 StringParamType - A (4)
+    C 233:0 Choice - A (4)
+    M 336:4 Choice.convert - A (4)
+    M 445:4 DateTime.convert - A (4)
+    C 490:0 _NumberRangeBase - A (4)
+    C 618:0 FloatRange - A (4)
+    M 636:4 FloatRange.__init__ - A (4)
+    C 754:0 File - A (4)
+    M 806:4 File.resolve_lazy_flag - A (4)
+    C 171:0 FuncParamType - A (3)
+    M 181:4 FuncParamType.convert - A (3)
+    C 401:0 DateTime - A (3)
+    C 472:0 _NumberParamTypeBase - A (3)
+    C 584:0 IntRange - A (3)
+    C 661:0 BoolParamType - A (3)
+    C 730:0 UUIDParameterType - A (3)
+    M 733:4 UUIDParameterType.convert - A (3)
+    M 1041:4 Path.shell_complete - A (3)
+    C 1060:0 Tuple - A (3)
+    M 1090:4 Tuple.convert - A (3)
+    F 875:0 _is_file_like - A (2)
+    C 30:0 ParamType - A (2)
+    M 62:4 ParamType.to_info_dict - A (2)
+    M 83:4 ParamType.__call__ - A (2)
+    M 126:4 ParamType.split_envvar_value - A (2)
+    C 163:0 CompositeParamType - A (2)
+    C 195:0 UnprocessedParamType - A (2)
+    M 270:4 Choice._normalized_mapping - A (2)
+    M 424:4 DateTime.__init__ - A (2)
+    M 439:4 DateTime._try_to_convert_date - A (2)
+    M 475:4 _NumberParamTypeBase.convert - A (2)
+    M 571:4 _NumberRangeBase.__repr__ - A (2)
+    C 576:0 IntParamType - A (2)
+    M 601:4 IntRange._clamp - A (2)
+    C 610:0 FloatParamType - A (2)
+    M 651:4 FloatRange._clamp - A (2)
+    M 698:4 BoolParamType.str_to_bool - A (2)
+    M 712:4 BoolParamType.convert - A (2)
+    M 1074:4 Tuple.__init__ - A (2)
+    M 1077:4 Tuple.to_info_dict - A (2)
+    M 1083:4 Tuple.name - A (2)
+    M 92:4 ParamType.get_metavar - A (1)
+    M 95:4 ParamType.get_missing_message - A (1)
+    M 102:4 ParamType.convert - A (1)
+    M 136:4 ParamType.fail - A (1)
+    M 145:4 ParamType.shell_complete - A (1)
+    M 167:4 CompositeParamType.arity - A (1)
+    M 172:4 FuncParamType.__init__ - A (1)
+    M 176:4 FuncParamType.to_info_dict - A (1)
+    M 198:4 UnprocessedParamType.convert - A (1)
+    M 203:4 UnprocessedParamType.__repr__ - A (1)
+    M 229:4 StringParamType.__repr__ - A (1)
+    M 258:4 Choice.__init__ - A (1)
+    M 264:4 Choice.to_info_dict - A (1)
+    M 326:4 Choice.get_missing_message - A (1)
+    M 360:4 Choice.get_invalid_choice_message - A (1)
+    M 374:4 Choice.__repr__ - A (1)
+    M 431:4 DateTime.to_info_dict - A (1)
+    M 436:4 DateTime.get_metavar - A (1)
+    M 468:4 DateTime.__repr__ - A (1)
+    M 491:4 _NumberRangeBase.__init__ - A (1)
+    M 505:4 _NumberRangeBase.to_info_dict - A (1)
+    M 547:4 _NumberRangeBase._clamp - A (1)
+    M 580:4 IntParamType.__repr__ - A (1)
+    M 614:4 FloatParamType.__repr__ - A (1)
+    M 726:4 BoolParamType.__repr__ - A (1)
+    M 750:4 UUIDParameterType.__repr__ - A (1)
+    M 787:4 File.__init__ - A (1)
+    M 801:4 File.to_info_dict - A (1)
+    M 858:4 File.shell_complete - A (1)
+    M 943:4 Path.to_info_dict - A (1)
+    M 1087:4 Tuple.arity - A (1)
+    C 1205:0 OptionHelpExtra - A (1)
+click/src/click/formatting.py
+    F 31:0 wrap_text - B (7)
+    M 210:4 HelpFormatter.write_dl - B (7)
+    F 14:0 measure_table - A (4)
+    F 283:0 join_options - A (4)
+    M 116:4 HelpFormatter.__init__ - A (4)
+    C 104:0 HelpFormatter - A (3)
+    M 147:4 HelpFormatter.write_usage - A (3)
+    F 24:0 iter_rows - A (2)
+    M 189:4 HelpFormatter.write_paragraph - A (2)
+    M 135:4 HelpFormatter.write - A (1)
+    M 139:4 HelpFormatter.indent - A (1)
+    M 143:4 HelpFormatter.dedent - A (1)
+    M 185:4 HelpFormatter.write_heading - A (1)
+    M 194:4 HelpFormatter.write_text - A (1)
+    M 255:4 HelpFormatter.section - A (1)
+    M 270:4 HelpFormatter.indentation - A (1)
+    M 278:4 HelpFormatter.getvalue - A (1)
+click/src/click/parser.py
+    F 51:0 _unpack_args - B (10)
+    M 389:4 _OptionParser._match_short_opt - B (9)
+    M 187:4 _Argument.process - B (8)
+    M 429:4 _OptionParser._get_value_from_state - B (8)
+    M 128:4 _Option.__init__ - B (6)
+    M 165:4 _Option.process - B (6)
+    C 181:0 _Argument - B (6)
+    M 323:4 _OptionParser._process_args_for_options - B (6)
+    C 127:0 _Option - A (5)
+    C 220:0 _OptionParser - A (5)
+    M 359:4 _OptionParser._match_long_opt - A (5)
+    M 469:4 _OptionParser._process_opts - A (5)
+    M 261:4 _OptionParser.add_option - A (4)
+    M 294:4 _OptionParser.parse_args - A (4)
+    F 111:0 _split_opt - A (3)
+    F 120:0 _normalize_opt - A (3)
+    F 502:0 __getattr__ - A (3)
+    M 312:4 _OptionParser._process_args_for_args - A (3)
+    C 212:0 _ParsingState - A (2)
+    M 237:4 _OptionParser.__init__ - A (2)
+    M 162:4 _Option.takes_value - A (1)
+    M 182:4 _Argument.__init__ - A (1)
+    M 213:4 _ParsingState.__init__ - A (1)
+    M 286:4 _OptionParser.add_argument - A (1)
+click/src/click/termui.py
+    F 518:0 style - D (23)
+    F 83:0 prompt - C (16)
+    F 197:0 confirm - C (11)
+    F 852:0 pause - B (7)
+    F 60:0 _build_prompt - B (6)
+    F 261:0 echo_via_pager - A (5)
+    F 76:0 _format_default - A (3)
+    F 507:0 _interpret_color - A (3)
+    F 659:0 secho - A (3)
+    F 724:0 edit - A (3)
+    F 493:0 clear - A (2)
+    F 816:0 getchar - A (2)
+    F 54:0 hidden_prompt_func - A (1)
+    F 294:0 progressbar - A (1)
+    F 314:0 progressbar - A (1)
+    F 334:0 progressbar - A (1)
+    F 647:0 unstyle - A (1)
+    F 694:0 edit - A (1)
+    F 704:0 edit - A (1)
+    F 714:0 edit - A (1)
+    F 782:0 launch - A (1)
+    F 846:0 raw_terminal - A (1)
+click/src/click/utils.py
+    F 222:0 echo - C (16)
+    F 59:0 make_default_short_help - C (12)
+    F 523:0 _detect_program_name - B (9)
+    F 449:0 get_app_dir - B (6)
+    F 578:0 _expand_args - B (6)
+    F 49:0 make_str - A (3)
+    F 358:0 open_file - A (3)
+    F 407:0 format_filename - A (3)
+    M 116:4 LazyFile.__init__ - A (3)
+    M 151:4 LazyFile.open - A (3)
+    C 498:0 PacifyFlushWrapper - A (3)
+    M 510:4 PacifyFlushWrapper.flush - A (3)
+    F 325:0 get_binary_stream - A (2)
+    F 337:0 get_text_stream - A (2)
+    C 109:0 LazyFile - A (2)
+    M 146:4 LazyFile.__repr__ - A (2)
+    M 169:4 LazyFile.close - A (2)
+    M 174:4 LazyFile.close_intelligently - A (2)
+    C 197:0 KeepOpenFile - A (2)
+    F 32:0 _posixify - A (1)
+    F 36:0 safecall - A (1)
+    M 143:4 LazyFile.__getattr__ - A (1)
+    M 181:4 LazyFile.__enter__ - A (1)
+    M 184:4 LazyFile.__exit__ - A (1)
+    M 192:4 LazyFile.__iter__ - A (1)
+    M 198:4 KeepOpenFile.__init__ - A (1)
+    M 201:4 KeepOpenFile.__getattr__ - A (1)
+    M 204:4 KeepOpenFile.__enter__ - A (1)
+    M 207:4 KeepOpenFile.__exit__ - A (1)
+    M 215:4 KeepOpenFile.__repr__ - A (1)
+    M 218:4 KeepOpenFile.__iter__ - A (1)
+    M 507:4 PacifyFlushWrapper.__init__ - A (1)
+    M 519:4 PacifyFlushWrapper.__getattr__ - A (1)
+click/src/click/exceptions.py
+    M 160:4 MissingParameter.format_message - C (13)
+    C 137:0 MissingParameter - B (7)
+    C 56:0 UsageError - A (5)
+    M 72:4 UsageError.show - A (5)
+    F 19:0 _join_param_hints - A (4)
+    C 95:0 BadParameter - A (3)
+    M 124:4 BadParameter.format_message - A (3)
+    M 200:4 MissingParameter.__str__ - A (3)
+    C 208:0 NoSuchOption - A (3)
+    C 277:0 FileError - A (3)
+    C 26:0 ClickException - A (2)
+    M 45:4 ClickException.show - A (2)
+    M 67:4 UsageError.__init__ - A (2)
+    M 149:4 MissingParameter.__init__ - A (2)
+    M 215:4 NoSuchOption.__init__ - A (2)
+    M 229:4 NoSuchOption.format_message - A (2)
+    C 242:0 BadOptionUsage - A (2)
+    C 268:0 NoArgsIsHelpError - A (2)
+    M 280:4 FileError.__init__ - A (2)
+    C 298:0 Exit - A (2)
+    M 32:4 ClickException.__init__ - A (1)
+    M 39:4 ClickException.format_message - A (1)
+    M 42:4 ClickException.__str__ - A (1)
+    M 113:4 BadParameter.__init__ - A (1)
+    M 252:4 BadOptionUsage.__init__ - A (1)
+    C 259:0 BadArgumentUsage - A (1)
+    M 269:4 NoArgsIsHelpError.__init__ - A (1)
+    M 273:4 NoArgsIsHelpError.show - A (1)
+    M 288:4 FileError.format_message - A (1)
+    C 294:0 Abort - A (1)
+    M 307:4 Exit.__init__ - A (1)
+click/src/click/shell_completion.py
+    F 623:0 _resolve_incomplete - B (10)
+    F 537:0 _is_incomplete_option - B (8)
+    F 503:0 _is_incomplete_argument - B (7)
+    F 562:0 _resolve_context - B (7)
+    M 311:4 BashComplete._check_version - B (6)
+    C 399:0 FishComplete - A (5)
+    M 405:4 FishComplete.get_completion_args - A (5)
+    F 19:0 shell_complete - A (4)
+    C 363:0 ZshComplete - A (4)
+    F 466:0 split_arg_string - A (3)
+    C 304:0 BashComplete - A (3)
+    M 381:4 ZshComplete.format_completion - A (3)
+    F 436:0 add_completion_class - A (2)
+    F 528:0 _start_of_option - A (2)
+    C 57:0 CompletionItem - A (2)
+    C 200:0 ShellComplete - A (2)
+    M 291:4 ShellComplete.complete - A (2)
+    M 347:4 BashComplete.get_completion_args - A (2)
+    M 369:4 ZshComplete.get_completion_args - A (2)
+    M 419:4 FishComplete.format_completion - A (2)
+    F 456:0 get_completion_class - A (1)
+    M 78:4 CompletionItem.__init__ - A (1)
+    M 90:4 CompletionItem.__getattr__ - A (1)
+    M 224:4 ShellComplete.__init__ - A (1)
+    M 237:4 ShellComplete.func_name - A (1)
+    M 244:4 ShellComplete.source_vars - A (1)
+    M 256:4 ShellComplete.source - A (1)
+    M 264:4 ShellComplete.get_completion_args - A (1)
+    M 271:4 ShellComplete.get_completions - A (1)
+    M 283:4 ShellComplete.format_completion - A (1)
+    M 343:4 BashComplete.source - A (1)
+    M 359:4 BashComplete.format_completion - A (1)
+click/src/click/_compat.py
+    F 371:0 open_stream - D (21)
+    F 238:0 _force_correct_text_stream - B (7)
+    M 125:4 _FixupStream.writable - A (5)
+    F 173:0 _find_binary_reader - A (4)
+    F 191:0 _find_binary_writer - A (4)
+    F 499:0 should_strip_ansi - A (4)
+    F 522:4 auto_wrap_for_ansi - A (4)
+    M 113:4 _FixupStream.readable - A (4)
+    F 19:0 _make_text_stream - A (3)
+    F 48:0 get_best_encoding - A (3)
+    F 160:0 _is_binary_writer - A (3)
+    F 218:0 _is_compat_stream_attr - A (3)
+    C 82:0 _FixupStream - A (3)
+    M 140:4 _FixupStream.seekable - A (3)
+    F 40:0 is_ascii_encoding - A (2)
+    F 151:0 _is_binary_reader - A (2)
+    F 209:0 _stream_is_misconfigured - A (2)
+    F 227:0 _is_compatible_text_stream - A (2)
+    F 316:0 get_binary_stdin - A (2)
+    F 323:0 get_binary_stdout - A (2)
+    F 330:0 get_binary_stderr - A (2)
+    F 337:0 get_text_stdin - A (2)
+    F 344:0 get_text_stdout - A (2)
+    F 351:0 get_text_stderr - A (2)
+    F 358:0 _wrap_io_open - A (2)
+    F 492:0 _is_jupyter_kernel_output - A (2)
+    F 559:4 _get_argv_encoding - A (2)
+    F 572:0 isatty - A (2)
+    C 56:0 _NonClosingTextIOWrapper - A (2)
+    M 71:4 _NonClosingTextIOWrapper.__del__ - A (2)
+    M 105:4 _FixupStream.read1 - A (2)
+    C 452:0 _AtomicFile - A (2)
+    M 463:4 _AtomicFile.close - A (2)
+    F 284:0 _force_correct_text_reader - A (1)
+    F 300:0 _force_correct_text_writer - A (1)
+    F 488:0 strip_ansi - A (1)
+    F 515:4 _get_argv_encoding - A (1)
+    F 562:4 _get_windows_console_stream - A (1)
+    F 568:0 term_len - A (1)
+    F 579:0 _make_cached_stream_func - A (1)
+    M 57:4 _NonClosingTextIOWrapper.__init__ - A (1)
+    M 77:4 _NonClosingTextIOWrapper.isatty - A (1)
+    M 92:4 _FixupStream.__init__ - A (1)
+    M 102:4 _FixupStream.__getattr__ - A (1)
+    M 453:4 _AtomicFile.__init__ - A (1)
+    M 460:4 _AtomicFile.name - A (1)
+    M 470:4 _AtomicFile.__getattr__ - A (1)
+    M 473:4 _AtomicFile.__enter__ - A (1)
+    M 476:4 _AtomicFile.__exit__ - A (1)
+    M 484:4 _AtomicFile.__repr__ - A (1)
+click/src/click/_termui_impl.py
+    F 676:0 open_url - C (19)
+    F 411:0 _pipepager - C (17)
+    F 369:0 pager - C (14)
+    M 236:4 ProgressBar.render_progress - C (11)
+    M 209:4 ProgressBar.format_progress_line - B (10)
+    M 628:4 Editor.edit - B (9)
+    M 44:4 ProgressBar.__init__ - B (8)
+    M 577:4 Editor.get_editor - B (7)
+    F 747:0 _translate_ch_to_exc - B (6)
+    F 507:0 _tempfilepager - A (5)
+    M 190:4 ProgressBar.format_bar - A (5)
+    M 282:4 ProgressBar.make_step - A (5)
+    M 335:4 ProgressBar.generator - A (5)
+    C 564:0 Editor - A (5)
+    M 594:4 Editor.edit_files - A (5)
+    F 818:4 raw_terminal - A (4)
+    C 43:0 ProgressBar - A (4)
+    M 149:4 ProgressBar.pct - A (4)
+    F 554:0 _nullpager - A (3)
+    F 767:4 getchar - A (3)
+    F 844:4 getchar - A (3)
+    M 142:4 ProgressBar.render_finish - A (3)
+    M 161:4 ProgressBar.eta - A (3)
+    M 166:4 ProgressBar.format_eta - A (3)
+    M 304:4 ProgressBar.update - A (3)
+    M 128:4 ProgressBar.__iter__ - A (2)
+    M 155:4 ProgressBar.time_per_iteration - A (2)
+    M 181:4 ProgressBar.format_pos - A (2)
+    F 764:4 raw_terminal - A (1)
+    M 115:4 ProgressBar.__enter__ - A (1)
+    M 120:4 ProgressBar.__exit__ - A (1)
+    M 134:4 ProgressBar.__next__ - A (1)
+    M 187:4 ProgressBar.format_pct - A (1)
+    M 330:4 ProgressBar.finish - A (1)
+    M 565:4 Editor.__init__ - A (1)
+    M 621:4 Editor.edit - A (1)
+    M 626:4 Editor.edit - A (1)
+click/src/click/testing.py
+    M 433:4 CliRunner.invoke - C (11)
+    M 280:4 CliRunner.isolation - B (9)
+    C 229:0 CliRunner - B (6)
+    F 131:0 make_input_stream - A (5)
+    M 547:4 CliRunner.isolated_filesystem - A (3)
+    F 60:0 _pause_echo - A (2)
+    C 25:0 EchoingStdin - A (2)
+    M 34:4 EchoingStdin._echo - A (2)
+    M 49:4 EchoingStdin.readlines - A (2)
+    M 52:4 EchoingStdin.__iter__ - A (2)
+    C 69:0 BytesIOCopy - A (2)
+    C 88:0 StreamMixer - A (2)
+    C 114:0 _NamedTextIOWrapper - A (2)
+    C 151:0 Result - A (2)
+    M 224:4 Result.__repr__ - A (2)
+    M 251:4 CliRunner.__init__ - A (2)
+    M 263:4 CliRunner.get_default_prog_name - A (2)
+    M 270:4 CliRunner.make_env - A (2)
+    M 26:4 EchoingStdin.__init__ - A (1)
+    M 31:4 EchoingStdin.__getattr__ - A (1)
+    M 40:4 EchoingStdin.read - A (1)
+    M 43:4 EchoingStdin.read1 - A (1)
+    M 46:4 EchoingStdin.readline - A (1)
+    M 55:4 EchoingStdin.__repr__ - A (1)
+    M 75:4 BytesIOCopy.__init__ - A (1)
+    M 79:4 BytesIOCopy.flush - A (1)
+    M 83:4 BytesIOCopy.write - A (1)
+    M 96:4 StreamMixer.__init__ - A (1)
+    M 101:4 StreamMixer.__del__ - A (1)
+    M 115:4 _NamedTextIOWrapper.__init__ - A (1)
+    M 123:4 _NamedTextIOWrapper.name - A (1)
+    M 127:4 _NamedTextIOWrapper.mode - A (1)
+    M 173:4 Result.__init__ - A (1)
+    M 195:4 Result.output - A (1)
+    M 207:4 Result.stdout - A (1)
+    M 214:4 Result.stderr - A (1)
+click/src/click/_utils.py
+    C 7:0 Sentinel - A (2)
+    M 18:4 Sentinel.__repr__ - A (1)
+click/src/click/decorators.py
+    F 421:0 version_option - B (10)
+    F 168:0 command - B (6)
+    F 293:0 group - A (3)
+    F 314:0 _param_memo - A (3)
+    F 100:0 pass_meta_key - A (2)
+    F 324:0 argument - A (2)
+    F 352:0 option - A (2)
+    F 380:0 confirmation_option - A (2)
+    F 404:0 password_option - A (2)
+    F 527:0 help_option - A (2)
+    F 28:0 pass_context - A (1)
+    F 39:0 pass_obj - A (1)
+    F 51:0 make_pass_decorator - A (1)
+    F 138:0 command - A (1)
+    F 144:0 command - A (1)
+    F 153:0 command - A (1)
+    F 163:0 command - A (1)
+    F 263:0 group - A (1)
+    F 269:0 group - A (1)
+    F 278:0 group - A (1)
+    F 288:0 group - A (1)
+
+565 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.3221238938053097)
+click/src/click/_winconsole.py - A (43.25)
+click/src/click/_textwrap.py - A (52.12)
+click/src/click/globals.py - A (84.64)
+click/src/click/__init__.py - A (60.87)
+click/src/click/core.py - C (0.00)
+click/src/click/types.py - A (23.41)
+click/src/click/formatting.py - A (52.13)
+click/src/click/parser.py - A (40.86)
+click/src/click/termui.py - A (44.45)
+click/src/click/utils.py - A (43.78)
+click/src/click/exceptions.py - A (52.97)
+click/src/click/shell_completion.py - A (46.35)
+click/src/click/_compat.py - A (30.82)
+click/src/click/_termui_impl.py - B (17.81)
+click/src/click/testing.py - A (48.89)
+click/src/click/_utils.py - A (100.00)
+click/src/click/decorators.py - A (54.24)
+click/src/click/_winconsole.py
+    LOC: 296
+    LLOC: 175
+    SLOC: 226
+    Comments: 18
+    Single comments: 13
+    Multi: 0
+    Blank: 57
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 8%
+        (C + M % L): 6%
+click/src/click/_textwrap.py
+    LOC: 51
+    LLOC: 36
+    SLOC: 40
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 11
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+click/src/click/globals.py
+    LOC: 67
+    LLOC: 34
+    SLOC: 28
+    Comments: 0
+    Single comments: 2
+    Multi: 15
+    Blank: 22
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 22%
+click/src/click/__init__.py
+    LOC: 123
+    LLOC: 84
+    SLOC: 104
+    Comments: 0
+    Single comments: 0
+    Multi: 6
+    Blank: 13
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 5%
+click/src/click/core.py
+    LOC: 3418
+    LLOC: 1416
+    SLOC: 1724
+    Comments: 322
+    Single comments: 299
+    Multi: 787
+    Blank: 608
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 19%
+        (C + M % L): 32%
+click/src/click/types.py
+    LOC: 1209
+    LLOC: 490
+    SLOC: 673
+    Comments: 53
+    Single comments: 48
+    Multi: 240
+    Blank: 248
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 8%
+        (C + M % L): 24%
+click/src/click/formatting.py
+    LOC: 301
+    LLOC: 170
+    SLOC: 189
+    Comments: 3
+    Single comments: 10
+    Multi: 49
+    Blank: 53
+    - Comment Stats
+        (C % L): 1%
+        (C % S): 2%
+        (C + M % L): 17%
+click/src/click/parser.py
+    LOC: 532
+    LLOC: 288
+    SLOC: 328
+    Comments: 72
+    Single comments: 65
+    Multi: 51
+    Blank: 88
+    - Comment Stats
+        (C % L): 14%
+        (C % S): 22%
+        (C + M % L): 23%
+click/src/click/termui.py
+    LOC: 883
+    LLOC: 240
+    SLOC: 382
+    Comments: 17
+    Single comments: 17
+    Multi: 330
+    Blank: 154
+    - Comment Stats
+        (C % L): 2%
+        (C % S): 4%
+        (C + M % L): 39%
+click/src/click/utils.py
+    LOC: 627
+    LLOC: 271
+    SLOC: 307
+    Comments: 33
+    Single comments: 30
+    Multi: 162
+    Blank: 128
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 11%
+        (C + M % L): 31%
+click/src/click/exceptions.py
+    LOC: 308
+    LLOC: 156
+    SLOC: 184
+    Comments: 6
+    Single comments: 7
+    Multi: 47
+    Blank: 70
+    - Comment Stats
+        (C % L): 2%
+        (C % S): 3%
+        (C + M % L): 17%
+click/src/click/shell_completion.py
+    LOC: 667
+    LLOC: 255
+    SLOC: 363
+    Comments: 39
+    Single comments: 43
+    Multi: 122
+    Blank: 139
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 11%
+        (C + M % L): 24%
+click/src/click/_compat.py
+    LOC: 622
+    LLOC: 336
+    SLOC: 435
+    Comments: 41
+    Single comments: 43
+    Multi: 17
+    Blank: 127
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 9%
+click/src/click/_termui_impl.py
+    LOC: 852
+    LLOC: 554
+    SLOC: 583
+    Comments: 98
+    Single comments: 98
+    Multi: 30
+    Blank: 141
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 17%
+        (C + M % L): 15%
+click/src/click/testing.py
+    LOC: 577
+    LLOC: 287
+    SLOC: 337
+    Comments: 12
+    Single comments: 5
+    Multi: 126
+    Blank: 109
+    - Comment Stats
+        (C % L): 2%
+        (C % S): 4%
+        (C + M % L): 24%
+click/src/click/_utils.py
+    LOC: 36
+    LLOC: 17
+    SLOC: 12
+    Comments: 2
+    Single comments: 3
+    Multi: 8
+    Blank: 13
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 17%
+        (C + M % L): 28%
+click/src/click/decorators.py
+    LOC: 551
+    LLOC: 232
+    SLOC: 268
+    Comments: 16
+    Single comments: 13
+    Multi: 138
+    Blank: 132
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 6%
+        (C + M % L): 28%
+** Total **
+    LOC: 11120
+    LLOC: 5041
+    SLOC: 6183
+    Comments: 732
+    Single comments: 696
+    Multi: 2128
+    Blank: 2113
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 12%
+        (C + M % L): 26%

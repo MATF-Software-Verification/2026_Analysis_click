@@ -1,0 +1,28 @@
+Mypy Type Check Coverage Summary
+================================
+
+Script: index
+
++------------------------+-------------------+-----------+
+| Module                 | Imprecision       | Lines     |
++------------------------+-------------------+-----------+
+| click                  |   0.00% imprecise |   123 LOC |
+| click._compat          |  14.47% imprecise |   622 LOC |
+| click._termui_impl     |  17.61% imprecise |   852 LOC |
+| click._textwrap        |   0.00% imprecise |    51 LOC |
+| click._utils           |   5.56% imprecise |    36 LOC |
+| click._winconsole      |   0.00% imprecise |   296 LOC |
+| click.core             |   8.89% imprecise |  3418 LOC |
+| click.decorators       |  16.70% imprecise |   551 LOC |
+| click.exceptions       |   4.22% imprecise |   308 LOC |
+| click.formatting       |   0.00% imprecise |   301 LOC |
+| click.globals          |   4.48% imprecise |    67 LOC |
+| click.parser           |   9.59% imprecise |   532 LOC |
+| click.shell_completion |   4.80% imprecise |   667 LOC |
+| click.termui           |   4.53% imprecise |   883 LOC |
+| click.testing          |   5.55% imprecise |   577 LOC |
+| click.types            |  12.66% imprecise |  1209 LOC |
+| click.utils            |   8.61% imprecise |   627 LOC |
++------------------------+-------------------+-----------+
+| Total                  |   9.14% imprecise | 11120 LOC |
++------------------------+-------------------+-----------+

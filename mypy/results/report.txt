@@ -1,0 +1,3 @@
+Generated HTML report (via XSLT): /Users/jelenalazovic/vs/2026_Analysis_click/mypy/results/index.html
+Generated TXT report (via XSLT): /Users/jelenalazovic/vs/2026_Analysis_click/mypy/results/index.txt
+Success: no issues found in 17 source files

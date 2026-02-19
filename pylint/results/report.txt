@@ -506,8 +506,6 @@ click/src/click/decorators.py:1:0: R0801: Similar lines in 2 files
 ==click.core:[3399:3417]
 ==click:[76:98]
     if name == "BaseCommand":
-        from .core import _BaseCommand
-
         warnings.warn(
             "'BaseCommand' is deprecated and will be removed in Click 9.0. Use"
             " 'Command' instead.",
@@ -517,8 +515,6 @@ click/src/click/decorators.py:1:0: R0801: Similar lines in 2 files
         return _BaseCommand
 
     if name == "MultiCommand":
-        from .core import _MultiCommand
-
         warnings.warn(
             "'MultiCommand' is deprecated and will be removed in Click 9.0. Use"
             " 'Group' instead.",
@@ -527,10 +523,10 @@ click/src/click/decorators.py:1:0: R0801: Similar lines in 2 files
         )
         return _MultiCommand
  (duplicate-code)
-click/src/click/decorators.py:1:0: R0401: Cyclic import (click._compat -> click._winconsole) (cyclic-import)
 click/src/click/decorators.py:1:0: R0401: Cyclic import (click.exceptions -> click.utils) (cyclic-import)
-click/src/click/decorators.py:1:0: R0401: Cyclic import (click.core -> click.formatting -> click.parser -> click.shell_completion) (cyclic-import)
+click/src/click/decorators.py:1:0: R0401: Cyclic import (click._compat -> click._winconsole) (cyclic-import)
 click/src/click/decorators.py:1:0: R0401: Cyclic import (click.core -> click.decorators) (cyclic-import)
+click/src/click/decorators.py:1:0: R0401: Cyclic import (click.core -> click.formatting -> click.parser -> click.shell_completion) (cyclic-import)
 click/src/click/decorators.py:1:0: R0401: Cyclic import (click.core -> click.parser -> click.shell_completion) (cyclic-import)
 
 

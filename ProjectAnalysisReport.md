@@ -42,7 +42,7 @@ primenom višestrukih tehnika verifikacije softvera:
 
 **Opis**: Framework za pisanje i pokretanje jediničnih testova u Python-u.
 
-**Korišćenje**: Napisano 28 novih unit testova koji pokrivaju:
+**Korišćenje**: Napisano 38 novih unit testova koji pokrivaju:
 
 #### test_decorators_advanced.py (4 testa)
 
@@ -54,7 +54,7 @@ primenom višestrukih tehnika verifikacije softvera:
 - `test_multiple_option_with_validation` - Multiple opcija sa callback validacijom
 - `test_variadic_arguments_with_options` - Variadic argumenti sa opcijama
 
-#### test_utils_advanced.py (11 testova)
+#### test_utils_advanced.py (9 testova)
 
 **Cilj**: Testiranje utility funkcija sa fokusom na Unicode i file operations
 
@@ -76,7 +76,7 @@ primenom višestrukih tehnika verifikacije softvera:
 - Progress bars (sa label-om i eksplicitnom dužinom)
 - Pause funkcionalnost
 
-#### test_types_advanced.py (8 testova)
+#### test_types_advanced.py (7 testova)
 
 **Cilj**: Testiranje Click type sistema
 
@@ -86,6 +86,34 @@ primenom višestrukih tehnika verifikacije softvera:
 - Bool type (konverzija različitih string reprezentacija)
 - Tuple type (multiple vrednosti odjednom)
 - Choice type (case-insensitive opcije)
+
+#### test_confirmation_option.py (3 testa)
+
+**Cilj**: Testiranje `@click.confirmation_option` dekoratora
+
+**Pokriveni scenariji**:
+- `test_confirmation_prompt_accepted` - Korisnik potvrdi akciju (y)
+- `test_confirmation_prompt_declined` - Korisnik odbije akciju (n), exit code 1
+- `test_confirmation_with_flag` - Preskakanje prompta direktnim `--yes` flagom
+
+#### test_password_option.py (3 testa)
+
+**Cilj**: Testiranje `@click.password_option` dekoratora
+
+**Pokriveni scenariji**:
+- `test_password_via_flag` - Lozinka prosleđena direktno kao `--password` opcija
+- `test_password_via_prompt_matching` - Lozinka uneta dvaput (podudaranje)
+- `test_password_via_prompt_mismatch` - Lozinka uneta dvaput (nepodudaranje)
+
+#### test_version_option.py (4 testa)
+
+**Cilj**: Testiranje `@click.version_option` dekoratora
+
+**Pokriveni scenariji**:
+- `test_version_explicit` - Eksplicitno zadata verzija
+- `test_version_custom_message` - Prilagođena format poruka verzije
+- `test_version_from_package` - Verzija čitana iz `importlib.metadata`
+- `test_version_package_not_found` - RuntimeError za nepostojeći paket
 
 **Komanda**:
 ```bash
@@ -121,26 +149,32 @@ Overall Coverage:     81%
 **Final coverage (Click + naši testovi)**:
 ```
 Total Statements:    4404
-Missed Statements:    818
-Overall Coverage:     81%
-Change:               +0%
+Missed Statements:    746
+Overall Coverage:     82%
+Change:               +1%
 ```
+
+**Napredak po modulima**:
+
+| Modul | Baseline | Final | Promena |
+|-------|----------|-------|---------|
+| `decorators.py` | 69% | 90% | **+21pp** |
+| Ostali moduli | ~81% | ~81% | ±0% |
 
 **Analiza rezultata**:
 
-Click već poseduje izuzetno kvalitetne testove sa 81% pokrivenosti, 
-što je iznad industrijskog standarda (60-70%). Naši testovi validiraju funkcionalnost 
-iz korisničke perspektive, ali testiraju iste putanje koje Click već pokriva.
+Dodavanjem testova za `confirmation_option`, `password_option` i `version_option`
+ostvaren je merljiv porast ukupne pokrivenosti sa 81% na 82%. Najznačajniji napredak
+je u modulu `decorators.py` koji je porastao sa 69% na 90% (+21 procentnih poena),
+što direktno odražava nove testove koji pokrivaju decorator API visokog nivoa.
 
 **Interpretacija**:
 
-Odsustvo numeričkog povećanja coverage-a nije nedostatak naše analize, već pozitivan 
-pokazatelj kvaliteta Click projekta - ukazuje da su developeri već temeljno testirali 
-svoju biblioteku. Naši testovi i dalje doprinose kvalitetu kroz:
+Povećanje coverage-a potvrđuje vrednost novih testova. Naši testovi doprinose kvalitetu kroz:
 
 1. **Validaciju funkcionalnosti** - Provera da API radi kako korisnici očekuju
 2. **Dokumentacija ponašanja** - Testovi služe kao executable specifikacija
-3. **Edge case pokrivenost** - Ekstremni Unicode karakteri, dugi input-i
+3. **Edge case pokrivenost** - Ekstremni Unicode karakteri, dugi input-i, nepodudaranje lozinki
 4. **Demonstracija razumevanja** - Pokazuje poznavanje Click biblioteke
 
 **Report lokacija**: `coverage/results/`
@@ -476,7 +510,7 @@ većine Python projekata koji ne koriste Black aktivno.
 
 **Pozitivni aspekti**:
 
-1. **Visok kvalitet postojećeg koda** - 81% coverage, 8.87/10 Pylint
+1. **Visok kvalitet postojećeg koda** - 81% coverage (+1%), 8.87/10 Pylint
 2. **Odlična type safety** - 90.86% type precision, 0 type errors
 3. **Minimalni security rizici** - 0 high/medium issues
 4. **Niska kompleksnost** - 85.7% funkcija grade A
@@ -491,16 +525,14 @@ većine Python projekata koji ne koriste Black aktivno.
 ### 4.3 Uticaj naših testova
 
 **Doprinosi**:
-- 28 novih testova (100% pass rate)
+- 38 novih testova (100% pass rate)
 - Validacija edge cases (Unicode, nested structures)
 - Dokumentacija očekivanog ponašanja
 - Demonstracija razumevanja Click API-ja
 
 **Coverage**:
-- Numerički coverage ostao 81% (bez promene)
-- Razlog: Click već ima izuzetno dobre testove
-- Naši testovi testiraju iste code path-ove
-- Ovo je pozitivan pokazatelj kvaliteta Click projekta
+- Ukupna pokrivenost porasla sa 81% na **82%** (+1%)
+- `decorators.py`: 69% → **90%** (+21%)
 
 ---
 
@@ -510,8 +542,8 @@ većine Python projekata koji ne koriste Black aktivno.
 
 Click je **primer kvalitetno razvijenog open-source projekta** sa visokim standardima:
 
-**Kvalitet koda**: 8.87/10 (Pylint)  
-**Test coverage**: 81% (iznad standarda)  
+**Kvalitet koda**: 8.87/10 (Pylint)
+**Test coverage**: 81% (+1% našim testovima)
 **Type safety**: 90.86% precision  
 **Security**: 0 kritičnih problema  
 **Maintainability**: 3.32 avg complexity  

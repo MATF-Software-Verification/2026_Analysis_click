@@ -41,13 +41,16 @@ Projekat koristi **6 različitih alata** za sveobuhvatnu analizu kvaliteta koda:
 
 ### 1. Pytest - Jedinični testovi
 
-**Napisano testova**: 28 novih testova
+**Napisano testova**: 38 novih testova
 
 **Distribucija**:
 - `test_decorators_advanced.py`: 4 testa
-- `test_utils_advanced.py`: 11 testova
+- `test_utils_advanced.py`: 9 testova
 - `test_termui_advanced.py`: 8 testova
 - `test_types_advanced.py`: 7 testova
+- `test_confirmation_option.py`: 3 testa
+- `test_password_option.py`: 3 testa
+- `test_version_option.py`: 4 testa
 
 **Pokriveni scenariji**:
 - Nested command groups (3+ nivoa)
@@ -56,6 +59,9 @@ Projekat koristi **6 različitih alata** za sveobuhvatnu analizu kvaliteta koda:
 - File operacije
 - Terminal UI (prompts, confirmations, progress bars)
 - Type validation (File, Path, Bool, Tuple, Choice)
+- Confirmation option (prihvatanje/odbijanje/flag)
+- Password option (prompt, podudaranje, nepodudaranje lozinki)
+- Version option (eksplicitna verzija, custom poruka, paket verzija)
 
 **Status**: Svi testovi prolaze (100% pass rate)
 
@@ -71,16 +77,18 @@ pytest unit_tests/ -v
 **Rezultati**:
 ```
 Baseline:  81% (postojeći Click testovi)
-Final:     81% (Click + naši testovi)
-Change:    +0%
+Final:     82% (Click + naši testovi)
+Change:    +1%
 ```
 
-**Analiza**: Click već poseduje izuzetno kvalitetne testove sa 81% pokrivenosti, 
-što je iznad industrijskog standarda (60-70%). Naši testovi validiraju funkcionalnost 
-iz korisničke perspektive, ali testiraju iste putanje koje Click već pokriva.
+**Napredak po modulima**:
+- `decorators.py`: 69% → **90%** (+21%)
 
-**Zaključak**: Odsustvo povećanja pokrivenosti nije nedostatak analize, već 
-pokazatelj visokog kvaliteta postojećih Click testova.
+**Analiza**: Dodavanjem testova za `confirmation_option`, `password_option` i `version_option`
+ostvaren je merljiv napredak u pokrivenosti.
+
+**Zaključak**: Ukupna pokrivenost porasla sa 81% na 82%, sa značajnim poboljšanjem
+pokrivenosti decorator modula.
 
 **Komanda**:
 ```bash
@@ -249,7 +257,7 @@ black --check --diff click/src/click/
 ### Pozitivni aspekti
 
 1. **Visok kvalitet postojećeg koda**
-   - 81% test coverage (iznad standarda)
+   - 81% test coverage (+1% našim testovima)
    - 8.87/10 Pylint score
    - 90.86% type precision
    - 3.32 prosečna kompleksnost

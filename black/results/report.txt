@@ -1,5 +1,5 @@
 --- /Users/jelenalazovic/vs/2026_Analysis_click/click/src/click/testing.py	2026-01-20 20:26:51.178196+00:00
-+++ /Users/jelenalazovic/vs/2026_Analysis_click/click/src/click/testing.py	2026-02-14 11:37:17.891727+00:00
++++ /Users/jelenalazovic/vs/2026_Analysis_click/click/src/click/testing.py	2026-02-19 12:04:18.624112+00:00
 @@ -177,12 +177,13 @@
          stderr_bytes: bytes,
          output_bytes: bytes,
@@ -18,7 +18,7 @@
          self.output_bytes = output_bytes
 would reformat /Users/jelenalazovic/vs/2026_Analysis_click/click/src/click/testing.py
 --- /Users/jelenalazovic/vs/2026_Analysis_click/click/src/click/core.py	2026-01-20 20:26:51.176890+00:00
-+++ /Users/jelenalazovic/vs/2026_Analysis_click/click/src/click/core.py	2026-02-14 11:37:18.396974+00:00
++++ /Users/jelenalazovic/vs/2026_Analysis_click/click/src/click/core.py	2026-02-19 12:04:19.156699+00:00
 @@ -1554,13 +1554,13 @@
      # Literal[type] isn't valid, so use Type[type]
  

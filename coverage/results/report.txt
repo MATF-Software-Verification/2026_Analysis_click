@@ -3,7 +3,7 @@ platform darwin -- Python 3.11.14, pytest-9.0.2, pluggy-1.6.0
 rootdir: /Users/jelenalazovic/vs/2026_Analysis_click/click
 configfile: pyproject.toml
 plugins: cov-7.0.0
-collected 1381 items / 1 deselected / 1380 selected
+collected 1380 items / 1 deselected / 1379 selected
 
 click/tests/test_arguments.py .......................................... [  3%]
 .................................................                        [  6%]
@@ -35,7 +35,7 @@ click/tests/test_shell_completion.py ................................... [ 68%]
 click/tests/test_termui.py ............................................s [ 73%]
 ssssssssssssssssssss.................................................... [ 78%]
 ...................................................                      [ 82%]
-click/tests/test_testing.py ..........................                   [ 83%]
+click/tests/test_testing.py ..........................                   [ 84%]
 click/tests/test_types.py ..................................s.....       [ 86%]
 click/tests/test_utils.py .............................................. [ 90%]
 ........................................................................ [ 95%]
@@ -44,8 +44,8 @@ click/test_confirmation_option.py ...                                    [ 97%]
 click/test_decorators_advanced.py ....                                   [ 97%]
 click/test_password_option.py ...                                        [ 97%]
 click/test_termui_advanced.py ........                                   [ 98%]
-click/test_types_advanced.py .......                                     [ 98%]
-click/test_utils_advanced.py ..........                                  [ 99%]
+click/test_types_advanced.py .......                                     [ 99%]
+click/test_utils_advanced.py .........                                   [ 99%]
 click/test_version_option.py ....                                        [100%]
 
 ================================ tests coverage ================================
@@ -69,8 +69,8 @@ click/src/click/shell_completion.py     220     21    90%   42, 54, 269, 289, 31
 click/src/click/termui.py               201     22    89%   24, 55-57, 78, 181, 257, 500-504, 616-617, 622-623, 806-808, 839-841, 847-849, 872, 879-880
 click/src/click/testing.py              263     12    95%   20-22, 47, 50, 53, 56, 141, 225-226, 510, 576-577
 click/src/click/types.py                433     39    91%   21-25, 124, 168, 186-192, 204, 217-225, 230, 449, 469, 555, 572-573, 581, 615, 727, 739, 751, 960, 1013, 1022, 1031, 1162-1167
-click/src/click/utils.py                237     61    74%   25-27, 42-44, 52-55, 90, 133, 147-149, 216, 316-319, 333, 352-355, 395, 480-492, 508, 511-517, 520, 547, 550, 606-627
+click/src/click/utils.py                237     62    74%   25-27, 33, 42-44, 52-55, 90, 133, 147-149, 216, 316-319, 333, 352-355, 395, 480-492, 508, 511-517, 520, 547, 550, 606-627
 -------------------------------------------------------------------
-TOTAL                                  4404    783    82%
+TOTAL                                  4404    784    82%
 Coverage HTML written to dir coverage/results/html
-========== 1357 passed, 22 skipped, 1 deselected, 1 xfailed in 2.73s ===========
+========== 1356 passed, 22 skipped, 1 deselected, 1 xfailed in 2.82s ===========

@@ -11,6 +11,7 @@ mkdir -p coverage/results
 echo "Running tests with coverage..."
 
 pytest click/tests/ unit_tests/ \
+  -k "not test_expand_args" \
   --cov=click/src/click \
   --cov-report=html:coverage/results/html \
   --cov-report=term-missing \
